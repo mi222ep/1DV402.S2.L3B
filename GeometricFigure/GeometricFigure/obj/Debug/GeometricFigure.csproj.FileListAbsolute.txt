@@ -1,0 +1,5 @@
+C:\Users\Eloque\Desktop\1DV402.S2.L2B\GeometricFigure\GeometricFigure\bin\Debug\GeometricFigure.exe.config
+C:\Users\Eloque\Desktop\1DV402.S2.L2B\GeometricFigure\GeometricFigure\bin\Debug\GeometricFigure.exe
+C:\Users\Eloque\Desktop\1DV402.S2.L2B\GeometricFigure\GeometricFigure\bin\Debug\GeometricFigure.pdb
+C:\Users\Eloque\Desktop\1DV402.S2.L2B\GeometricFigure\GeometricFigure\obj\Debug\GeometricFigure.exe
+C:\Users\Eloque\Desktop\1DV402.S2.L2B\GeometricFigure\GeometricFigure\obj\Debug\GeometricFigure.pdb
