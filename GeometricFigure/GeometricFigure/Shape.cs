@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GeometricFigure
 {
-    abstract class Shape
+    abstract class Shape : IComparable
+
     {
         double _lenght;
         double _width;
