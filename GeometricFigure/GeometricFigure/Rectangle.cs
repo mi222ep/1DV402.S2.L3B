@@ -8,8 +8,20 @@ namespace GeometricFigure
 {
     class Rectangle : Shape
     {
-        public override double Area { get { return 54;} }
-        public override double Perimeter { get{ return 43;}}
+        public override double Area
+        {
+            get
+            {
+                return Lenght * Width;
+            }
+        }
+        public override double Perimeter
+        {
+            get
+            {
+                return (Width*2)+(Lenght*2);
+            }
+        }
         public Rectangle (double lenght, double width)
             :base (lenght, width)
         {

@@ -8,8 +8,24 @@ namespace GeometricFigure
 {
     class Elipse : Shape
     {
-        public override double Area { get { return 54;} }
-        public override double Perimeter { get{ return 43;}}
+        public override double Area
+        {
+            get
+            {
+                double a = Lenght / 2;
+                double b = Width / 2;
+                return Math.PI * a * b;
+            }
+        }
+        public override double Perimeter
+        {
+            get
+            {
+                double a = Lenght / 2;
+                double b = Width / 2;
+                return Math.PI * Math.Sqrt(2 * a * a + 2 * b * b);
+            }
+        }
         public Elipse(double lenght, double width)
             :base (lenght, width)
         {

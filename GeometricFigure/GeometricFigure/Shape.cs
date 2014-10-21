@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace GeometricFigure
 {
-    abstract class Shape : IComparable
+    public enum ShapeType { Elipse, Rectangle };
+    abstract class Shape
 
     {
-        double _lenght;
-        double _width;
+        private double _lenght;
+        private double _width;
 
         public abstract double Area { get; }
         public double Lenght
@@ -18,6 +19,10 @@ namespace GeometricFigure
             get { return _lenght; }
             set
             {
+                if (value < 1)
+                {
+                    throw new ArgumentException();
+                }
                 _lenght = Lenght;
             }
         }
@@ -30,22 +35,26 @@ namespace GeometricFigure
             }
             set
             {
+                 if (value < 1)
+                {
+                    throw new ArgumentException();
+                }
                 _width = Width;
             }
         }
-
-        public int CompareTo(object obj)
-        {
-            return 12;
-        }
         protected Shape(double lenght, double width)
         {
+            //Inga värden sparas, VARFÖR?!
             Lenght = lenght;
             Width = width;
         }
         public override string ToString()
         {
-            return ("string");
+            return string.Format("\nLängd : {0}\nBredd : {1} \nOmkrets : {2} \nArea : {3}", _lenght, _width, Perimeter, Area);
+            //Längd : Length
+            //Bredd : Width
+            //Omkrets: Perimeter
+            //Area : Area
         }
 
     }
